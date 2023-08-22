@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subtasks Estimation</title>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div class="popupHeader">
+        <h1>Subtasks Estimation</h1>
+    </div>
+    <div class="popupBody">
+        <form autocomplete="on" id="subtaskEstimationForm">
+            <div class="codingEffortSection">
+                <h2>Select Coding Effort</h2>
+                    <div>
+                        <label >
+                        <input type="radio" id="codingEffort" name="codingEffort" value="1">1d
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                        <input type="radio" id="codingEffort" name="codingEffort" value="1.5">1.5d
+                        </label>
+                    </div>
+                    <div>
+                        <label >
+                        <input type="radio" id="codingEffort" name="codingEffort" value="2">2d
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                        <input type="radio" id="codingEffort" name="codingEffort" value="2.5">2.5d
+                        </label>
+                    </div>
+                    <div>
+                        <label >
+                        <input type="radio" id="codingEffort" name="codingEffort" value="3">3d
+                        </label>
+                    </div>
+                    <div>
+                        <label>
+                        <input type="radio" id="codingEffort" name="codingEffort" value="3.5">3.5d
+                        </label>
+                    </div>
+                    <div>
+                        <label ></label>
+                        <input type="radio" id="codingEffort" name="codingEffort" value="4">4d
+                    </div>
+                    <div>
+                        <label>
+                        <input type="radio" id="codingEffort" name="codingEffort" value="4.5">4.5d
+                        </label>
+                    </div>
+                    <div>
+                        <label >
+                        <input type="radio" id="codingEffort" name="codingEffort" value="5">5d
+                        </label>
+                    </div>
+            </div>
+            <div class="codeReviewIdSection">
+                <input id="codeReviewerId" placeholder="Enter Code Reviewer's ID"/>
+            </div>
+            <div class="testerIdSection">
+                <input id="testerId" placeholder="Enter Code Tester's ID"/>
+            </div>
+            <button type="submit" id="updateSubtask"  type="button">Update Subtasks1</button>
+        </form>
+    </div>
+</body>
+</html>

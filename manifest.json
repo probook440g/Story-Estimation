@@ -1,0 +1,25 @@
+{
+  "name": "Automating Estimation Process",
+  "version": "1.0.0",
+  "description": "Automating the estimation Process of a story",
+  "manifest_version": 3,
+  "author": "ishaaq.mak@gmail.com",
+  "permissions": ["tabs"],
+  "content_scripts": [
+    {
+      "js": ["scripts.js"],
+      "matches": ["https://jira.ibsplc.com/jira/browse*"]
+    }
+  ],
+  "action": {
+    "default_title": "Automating Estimation Process",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["popup.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
